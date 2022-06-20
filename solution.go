@@ -21,11 +21,11 @@ const (
 
 func CalcSquare(sideLen float64, sidesNum myType) float64 {
 	if sidesNum == SidesTriangle {
-		return sideLen * sideLen * math.Sqrt(3) / 2
+		return sideLen * sideLen * math.Sqrt(3) / 4
 	} else if sidesNum == SidesSquare {
 		return sideLen * sideLen
 	} else if sidesNum == SidesCircle {
-		return 2 * math.Pi * sideLen * sideLen
+		return math.Pi * sideLen * sideLen
 	} else {
 		return 0
 	}
